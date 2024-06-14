@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+}
+.navbar img {
+  display: flex;
+  align-items: flex-start;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+.navbar ul li {
+  font-family: Georgia;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 25px;
+  transition: all 0.5s ease;
+}
+.navbar ul li a:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px white;
+}
+
+
+#home {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(62, 16, 16, 0.548);
+  height: 840px;
+  justify-content: center;
+  align-items: center;
+  color: rgb(209, 198, 198);
+}
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("home3.jpeg") no-repeat center center/cover;
+  height: 895px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+}
+.headings {
+  font-family: century;
+  font-size: 3rem;
+  text-align: center;
+  margin: 40px 0px;
+}
+.btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  outline: none;
+  transition: 0.6s ease;
+}
+.btn a {
+  text-decoration: none;
+  color: black;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+  font-weight: bold;
+}
+
+
+#about {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 50px;
+
+  height: 840px;
+  background: url("About\ Me.jpg") no-repeat center center/cover;
+  height: 800px;
+  width: 100%;
+}
+#intro {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 10px;
+}
+#intro h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+#intro p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 20px;
+}
+.img a img {
+  height: 40px;
+  width: 40px;
+}
+
+#send:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px white;
+}
